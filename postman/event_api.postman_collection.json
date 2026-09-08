@@ -1,0 +1,151 @@
+{
+  "info": {
+    "_postman_id": "4bae1391-6112-4003-abd6-10cf2c6635d2",
+    "name": "event_api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6246033"
+  },
+  "item": [
+    {
+      "name": "event",
+      "item": [
+        {
+          "name": "listar todos los eventos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/events",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "events"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "obtener evento por id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/events/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "events",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "eliminar un evento por id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/events/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "events",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "crear nuevo evento",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Concierto Rock\",\r\n  \"description\": \"Show en vivo con bandas locales\",\r\n  \"date\": \"2026-10-15T20:00:00\",\r\n  \"location\": \"Estadio Central\",\r\n  \"category\": \"Música\",\r\n  \"imageUrl\": \"https://ejemplo.com/imagenes/concierto-rock.jpg\",\r\n  \"capacity\": 500,\r\n  \"availableTickets\": 500,\r\n  \"price\": 2500.00,\r\n  \"status\": \"ACTIVE\",\r\n  \"createdAt\": \"2026-10-15T20:00:00\",\r\n  \"updatedAt\": \"2026-10-15T20:00:00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/events",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "events"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "actualizar evento",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Concierto Rock - Reprogramado\",\r\n  \"description\": \"Show en vivo con bandas locales\",\r\n  \"date\": \"2026-10-15T20:00:00\",\r\n  \"location\": \"Estadio Central\",\r\n  \"category\": \"Música\",\r\n  \"imageUrl\": \"https://ejemplo.com/imagenes/concierto-rock.jpg\",\r\n  \"capacity\": 500,\r\n  \"availableTickets\": 500,\r\n  \"price\": 2500.00,\r\n  \"status\": \"ACTIVE\",\r\n  \"createdAt\": \"2026-10-15T20:00:00\",\r\n  \"updatedAt\": \"2026-10-15T20:00:00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/events/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "events",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}

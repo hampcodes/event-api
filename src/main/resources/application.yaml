@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: event-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/event_db
+    username: postgres
+    password: adminadmin
+
+  jpa:
+    hibernate:
+      ddl-auto: update #ddl: Definition Data Language CREATE, ALTER, DROP
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  servlet:
+    context-path: /api
