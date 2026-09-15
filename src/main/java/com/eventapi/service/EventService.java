@@ -33,7 +33,7 @@ public class EventService {
         eventExist.setDescription(event.getDescription());
         eventExist.setDate(event.getDate());
         eventExist.setLocation(event.getLocation());
-        eventExist.setCategory(event.getCategory());
+        //eventExist.setCategory(event.getCategory());
         eventExist.setImageUrl(event.getImageUrl());
         eventExist.setCapacity(event.getCapacity());
         eventExist.setAvailableTickets(event.getAvailableTickets());
