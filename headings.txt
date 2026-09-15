@@ -1,0 +1,21 @@
+Laboratorio Spring Data JPA .
+Índice
+Paso 0 · Crea tu rama de trabajo
+Paso 1 · Punto de partida: así está el proyecto hoy
+Paso 2 · Category — la entidad nueva más simple
+Paso 3 · Role — catálogo de roles
+Paso 4 · User — organizador, comprador y favoritos
+Paso 5 · OrganizerDetails — datos del organizador (1:1 con User)
+Paso 6 · Profile — datos personales (1:1 con User)
+Paso 7 · Event — FK al organizador y relación con categorías
+Paso 8 · EventCategoryId — la clave compuesta
+Paso 9 · EventCategory — la entidad intermedia (M:N con dato extra)
+Paso 10 · Purchase — la compra
+Paso 11 · Payment — pagos de una compra
+Paso 12 · CategoryRepository, RoleRepository, OrganizerDetailsRepository, ProfileRepository y EventCategoryRepository
+Paso 13 · EventRepository — Query Method, JPQL y @Modifying
+Paso 14 · PurchaseRepository — SQL nativo
+Paso 15 · PaymentRepository
+Paso 16 · Procedimiento almacenado — reporte de ventas
+Paso 17 · Cómo probar todo junto
+Paso 18 · Checklist final y cierre de rama
