@@ -1,0 +1,23 @@
+Heading 1 | Laboratorio Spring Data JPA .
+Heading 2 | Índice
+Heading 2 | Paso 0 · Crea tu rama de trabajo
+Heading 2 | Paso 1 · Punto de partida: así está el proyecto hoy
+Heading 2 | Mapeo (entidades)
+Heading 2 | Paso 2 · Category — la entidad nueva más simple
+Heading 2 | Paso 3 · Role — catálogo de roles
+Heading 2 | Paso 4 · User — organizador, comprador y favoritos
+Heading 2 | Paso 5 · OrganizerDetails — datos del organizador (1:1 con User)
+Heading 2 | Paso 6 · Profile — datos personales (1:1 con User)
+Heading 2 | Paso 7 · Event — FK al organizador y relación con categorías
+Heading 2 | Paso 8 · EventCategoryId — la clave compuesta
+Heading 2 | Paso 9 · EventCategory — la entidad intermedia (M:N con dato extra)
+Heading 2 | Paso 10 · Purchase — la compra
+Heading 2 | Paso 11 · Payment — pagos de una compra
+Heading 2 | Repositorios y consultas
+Heading 2 | Paso 12 · CategoryRepository, RoleRepository, OrganizerDetailsRepository, ProfileRepository y EventCategoryRepository
+Heading 2 | Paso 13 · EventRepository — Query Method, JPQL y @Modifying
+Heading 2 | Paso 14 · PurchaseRepository — SQL nativo
+Heading 2 | Paso 15 · PaymentRepository
+Heading 2 | Paso 16 · Procedimiento almacenado — reporte de ventas
+Heading 2 | Cierre
+Heading 2 | Paso 17 · Cómo probar todo junto
