@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Entity
@@ -23,8 +24,6 @@ public class Event {
     private String description;
     private LocalDateTime date;
     private String location;
-    @Column(name = "category", nullable = false, length = 50)
-    private String category;
     private String imageUrl;
     private Integer capacity;
     @Column(name = "available_tickets", nullable = false)
@@ -33,6 +32,13 @@ public class Event {
 
     @Enumerated(EnumType.STRING)
     private EventStatus status;
+
+    @OneToMany(mappedBy = "event")
+    private List<EventCategory> eventCategories;
+
+    //Muchos Event puede ser agregar como Favorito por Mucho User
+    @ManyToMany(mappedBy = "favoriteEvents")
+    private List<User> favoritedBy;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
